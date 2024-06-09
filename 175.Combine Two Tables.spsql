@@ -1,0 +1,10 @@
+-- SQL Statement to fetch combined information from Person and Address tables
+SELECT 
+    Person.firstName,
+    Person.lastName,
+    Address.city,
+    Address.state
+FROM 
+    Person
+LEFT JOIN 
+    Address ON Person.personId = Address.personId;
